@@ -201,7 +201,7 @@ if (message.content === "test") {
     }, ms);1000
 
 });
-`
+
 client.on('message', message => {
   if (true) {
 if (message.content === "$invite") {
