@@ -8,9 +8,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
 if (message.content === "test") {
-  var ms = 60000;
+  var ms = 600000;
       var interval = setInterval (function () {
-        message.channel.send("لا إله الا الله, سبحان الله, الحمدالله, الله اكبر")
+        message.channel.send("سبحان الله , الحمدالله,لا إله الا الله, الله اكبر")
       }, ms); 
     }
 });
