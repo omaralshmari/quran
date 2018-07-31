@@ -205,7 +205,7 @@ if (message.content === "test") {
 client.on('message', message => {
   if (true) {
 if (message.content === "$invite") {
-      message.author.send('  رابط بوتك  | https://goo.gl/xdM1k9     ').catch(e => console.log(e.stack));
+      message.author.send(' رابط البوت ...  | https://goo.gl/xdM1k9     ').catch(e => console.log(e.stack));
  
     }
    }
