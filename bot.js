@@ -14,3 +14,5 @@ if (message.content === "test") {
       }, ms); 
     }
 });
+
+client.login(process.env.BOT_TOKEN); 
