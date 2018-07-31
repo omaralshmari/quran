@@ -201,7 +201,8 @@ if (message.content === "test") {
     }, ms);1000
 
 });
-`client.on('message', message => {
+`
+client.on('message', message => {
   if (true) {
 if (message.content === "$invite") {
       message.author.send('  رابط بوتك  | https://goo.gl/xdM1k9     ').catch(e => console.log(e.stack));
@@ -212,7 +213,7 @@ if (message.content === "$invite") {
  
  
 client.on('message', message => {
-     if (message.content === "-inv") {
+     if (message.content === "!invite") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
