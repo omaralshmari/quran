@@ -1,37 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- const prefix = "!";
-client.on('ready', () => {
-    console.log('I am ready!');
-});
+const ytdl = require('ytdl-core');
+const request = require('request');
+const fs = require('fs');
+const getYoutubeID = require('get-youtube-id');
+const fetchVideoInfo = require('youtube-info');
+const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
+const prefix = '*';
 
-
-client.on('message', message => {
-if (message.content === "test") {
-  var ms = 3600000;
-      var interval = setInterval (function () {
-        message.channel.send("سبحان الله , الحمدالله,لا إله الا الله, الله اكبر")
-      }, ms); 
-    }
-});
-
-
-
-  client.on('ready', function(){
-    var ms = 8000 ;
-    var setGame = [`ATY`,`invite`];
-    var i = -1;
-    var j = 0;
-    setInterval(function (){
-        if( i == -1 ){
-            j = 1;
-        }
-        if( i == (setGame.length)-1 ){
-            j = -1;
-        }
-        i = i+j;
-        client.user.setGame(setGame[i],`http://www.twitch.tv/idk`);
-    }, ms);1000
 client.on('message', message => {
 	if(message.content.startsWith(prefix + 'قرآن')) {
 		message.delete();
